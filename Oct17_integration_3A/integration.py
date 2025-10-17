@@ -26,8 +26,8 @@ def print_student():
 button_print = tk.Button(root, text='Print',command = print_student)
 button_print.pack(pady=15)
 
-conn = sqlite3.connect('student.db') #connect to db
-cursor = conn.cursor() #cursor to execute SQL code
+conn = sqlite3.connect('student.db') # connect to db
+cursor = conn.cursor() # ursor to execute SQL code
 
 def create_student():
     student_id = entry_id.get()
